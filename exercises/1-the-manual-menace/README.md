@@ -101,7 +101,7 @@ https://codeready-workspaces.apps.<DOMAIN_FOR_YOUR_CLASS>/dashboard/#/load-facto
 ![init-code1](../images/exercise1/init-code1.png)
 ![init-code1-complete](../images/exercise1/init-code1-complete.png)
 
-3. Open the `enablement-ci-cd` folder in your cloud ide (or your favourite editor if using a local machine). The project is laid out as follows
+3. Open the `enablement-ci-cd` folder in your cloud ide (or the editor if using a local machine). The project is laid out as follows
 ```
 .
 ├── README.md
@@ -335,7 +335,7 @@ git push -u origin --all
 ### Part 5 - MongoDB for CI tests
 > _In order to run our API tests in CI in later labs; we need there to be a MongoDB available for executing our tests. As this is part of our CI/CD Lifecycle; we will add it now._
 
-1. Open `enablement-ci-cd` in your favourite editor. Edit the `inventory/host_vars/ci-cd-tooling.yml` to include a new object for our mongodb as shown below. This item can be added below Nexus in the `ci-cd-tooling` section.
+1. Open `enablement-ci-cd` in the editor. Edit the `inventory/host_vars/ci-cd-tooling.yml` to include a new object for our mongodb as shown below. This item can be added below Nexus in the `ci-cd-tooling` section.
 
 <kbd>📝 *enablement-ci-cd/inventory/host_vars/ci-cd-tooling.yml*</kbd>
 ```yaml
