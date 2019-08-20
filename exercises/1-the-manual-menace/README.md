@@ -233,7 +233,17 @@ ansible-playbook apply.yml -i inventory/ -e target=bootstrap
 
 where the `-e target=bootstrap` is passing an additional variable specifying that we run the `bootstrap` inventory
 
-13. Once successful you should see an output similar to this: ![playbook-success](../images/exercise1/play-book-success.png)
+13. Once successful you should see an output similar to the below. If you see `skipped` in the output, that is ok; the only thing to worry about is `failed` or `unreachable`: ![playbook-success](../images/exercise1/play-book-success.png)
+
+<p class="tip">
+  <b>NOTE</b> - If aren't enjoying all the output from Ansible via the <b>cowsay</b> utility or just hate cows, run the following.
+  <br/>
+  <code>
+    echo "export ANSIBLE_NOCOWS=1" >> ~/.bashrc
+    <br/>
+    source ~/.bashrc
+  </code>
+</p>
 
 14. You can check to see the projects have been created successfully by running
 
