@@ -134,6 +134,10 @@ https://codeready-workspaces.apps.<DOMAIN_FOR_YOUR_CLASS>/dashboard/#/load-facto
   namespace_prefix: "<YOUR_NAME>"
 ```
 
+<p class="tip">
+  <b>NOTE</b> - If you're using the default Red Hat CodeReady Workspaces or Eclipse Che, don't worry about saving the files. It will do this automatically for you by default.
+</p>
+
 5. Open the `inventory/host_vars/projects-and-policies.yml` file; you should see some variables setup already to create the `<YOUR_NAME>-ci-cd` namespace. This object is passed to the OpenShift Applier to call the `templates/project-requests.yml` template with the parameters composed from the inventory and the `ci_cd` vars in the `apply.yml` playbook. We will add some additional content here but first let's explore the parameters and the template
 
 6. Inside of the `inventory/host_vars/projects-and-policies.yml` you'll see the following
@@ -199,7 +203,6 @@ test:
 ![open-terminal](../images/exercise1/open-terminal.png)
 
 <p class="tip">
-<b>NOTE</b> - If you want to try <b>z shell</b> as your default in the cloud ide run this command
   <b>NOTE</b> - If you want to try <b>z shell</b> as your default in the cloud ide run this command
   <br/>
   <code>
