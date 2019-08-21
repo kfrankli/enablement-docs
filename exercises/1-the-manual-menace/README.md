@@ -65,25 +65,39 @@ If you're feeling confident and don't want to follow the step-by-step guide thes
 ### Part 1 - Create your cloud workspace
 > _Create your cloud ide environment using Che_
 
-1. To create your cloud ide environment, open a web browser using the following URL:
+1. To create your cloud ide environment, open a web browser using the following "magic link" URL:
 
 ```
 https://codeready-workspaces.apps.<DOMAIN_FOR_YOUR_CLASS>/dashboard/#/load-factory?name=DO500%20Template&user=admin
 ```
 
 <p class="tip">
-<b>NOTE</b> - Complete URL should be replaced with the one you've been provided by the instructor.
+  <b>NOTE</b> - Complete URL should be replaced with the one you've been provided by the instructor.
+  <br/>
+  Only visit this site once, otherwise it may create duplicate workspaces.
 </p>
 
-2. Login using the `OpenShift 3` button using your credentials
+2. Select the `OpenShift v3` login button
+
+![codeready-login](../images/exercise1/codeready-login.png)
+
+3. Provide the user credentials that the instructor provided and then select the `Log in` button
+
+![ocp-login](../images/exercise1/ocp-login.png)
+
+4. Ensure that the checkbox next to `user:full` is checked and then select the `allow selected permissions` button
+
+![codeready-ocp-permissions](../images/exercise1/codeready-ocp-permissions.png)
+
+5. Update the account information fields as appropriate and select the `Submit` button
 
 ![code-ready-workspaces](../images/exercise1/code-ready-workspaces.png)
 
-3. You should see your workspace creating
+6. You should see your workspace creating
 
 ![che-workspace-create](../images/exercise1/che-workspace-create.png)
 
-4. And finally your cloud ide should be ready
+7. And finally your cloud ide should be ready
 
 ![che-workspace-done](../images/exercise1/che-workspace-done.png)
 
